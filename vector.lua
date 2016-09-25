@@ -1,15 +1,11 @@
 vector = {}
 
-<<<<<<< HEAD
-function vector:new(x, y)
-=======
 function vector:new(x, y) -- Creates a new fucking badass lookin vector for your shitty ass
->>>>>>> master
   local o = {}
   setmetatable(o, {__index = self})
 
   o.x, o.y = x, y
-
+  
   return o
 end
 
