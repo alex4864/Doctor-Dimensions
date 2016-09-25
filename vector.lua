@@ -3,7 +3,7 @@ vector = {}
 function vector:new(x, y) -- Creates a new fucking badass lookin vector for your shitty ass
   local o = {}
   setmetatable(o, {__index = self})
-  
+
   o.x, o.y = x, y
   
   return o
@@ -59,10 +59,10 @@ end
 
 function sumVectorTable(vectorTable) -- If you have a table of vectors, it adds them. DUH
   output = vector:create(0, 0)
-  
+
   for i, v in ipairs(vectorTable) do
     output = output:add(v)
   end
-  
+
   return output
 end
