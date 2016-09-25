@@ -1,11 +1,11 @@
 vector = {}
 
-function vector:create(x, y)
+function vector:new(x, y)
   local o = {}
   setmetatable(o, {__index = self})
-  
+
   o.x, o.y = x, y
-  
+
   return o
 end
 
@@ -59,10 +59,10 @@ end
 
 function sumVectorTable(vectorTable)
   output = vector:create(0, 0)
-  
+
   for i, v in ipairs(vectorTable) do
     output = output:add(v)
   end
-  
+
   return output
 end

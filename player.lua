@@ -102,7 +102,7 @@ function player:update(dt)
   self:updateState(dt)
   self:updateVelocity(dt)
 
-  --self.position = self.position:add
+  self.position = self.position:add(velocity:multiply(dt))
 end
 
 function player:draw()

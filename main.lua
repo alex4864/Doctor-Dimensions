@@ -1,3 +1,4 @@
+require "vector"
 require "player"
 
 function love.load()
