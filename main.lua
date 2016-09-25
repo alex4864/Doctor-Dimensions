@@ -1,14 +1,20 @@
 require "vector"
 require "player"
+require "block"
 
 function love.load()
-  player:new(100, 100, {left = "a", right = "d", up = "w", down = "s"})
+  block:new(20,20)
 end
 
 function love.update(dt)
-  playerList[1]:update(dt)
+  
 end
 
 function love.draw()
+<<<<<<< HEAD
   playerList[1]:draw()
 end
+=======
+  blockList[1]:draw()
+end
+>>>>>>> master
